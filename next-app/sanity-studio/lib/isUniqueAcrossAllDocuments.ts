@@ -1,4 +1,4 @@
-export async function isUniqueAcrossAllDocuments(slug, context) {
+export async function isUniqueAcrossAllDocuments(slug: any, context: { document: any; getClient: any; }) {
     const { document, getClient } = context;
     const client = getClient({ apiVersion: '2022-12-07' });
     const id = document._id.replace(/^drafts\./, '');

@@ -1,7 +1,7 @@
 import { cache } from "react"
 import { createClient } from '@sanity/client'
 import type { SanityClient } from "@sanity/client";
-// import { env } from "../../env";
+// import { env } from ".env";
 
 
 export function getClient(preview?: { token?: string }): SanityClient {

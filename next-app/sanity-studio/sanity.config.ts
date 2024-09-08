@@ -1,7 +1,7 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { visionTool } from '@sanity/vision'
+import { schemaTypes } from './schemaTypes'
 import { deskStructure } from './deskStructure'
 
 const config = defineConfig({
@@ -11,7 +11,7 @@ const config = defineConfig({
   projectId: 'ib1ciqv7',
   dataset: 'production',
 
-  basePath: "/studio",
+  basePath: '/studio',
 
   plugins: [structureTool({ structure: deskStructure }), visionTool()],
 
